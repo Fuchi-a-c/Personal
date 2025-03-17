@@ -2,78 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-
-    <style>
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 40px;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-    </style>
-
-
-    <title>Fuchinanya Akpuokwe</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image" href="logo.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Fuchinanya Akpuokwe</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <img src="./images/3.png" width="200px" alt="Logo">
-            <h1>Fuchinanya Akpuokwe</h1>
-            <p>Web Developer</p>
-            <p>I am Software Engineering major at Iowa State
-                University with a minor in cyber security. This semester Spring 2025 I am taking
-                 SE/ComS319, Coms 104, Math 207, Cpre 310 and Cpre 288.
-                The number of students in my course (SE 319) is around 400
-                among the four groups. </p>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><img src="5.png" alt="profile" /></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home" id="home">
+    <div class="home__container">
+      <div class="content">
+        <p class="subtitle">HELLO</p>
+        <h1 class="title">
+          I am <span>Fuchinanya<br />a</span> Software Engineer
+        </h1>
+        <p class="description">
+          Welcome to my web developer portfolio! I'm Fuchi, a skilled and
+          creative software engineer with a passion for creating beautiful,
+          responsive, and user-friendly websites.
+        </p>
+        <div class="action__btns">
+          <a href="#contact" class="contact-link"><button class="contact__me">Contact Me</button></a>
+          <a href="./Fuchinanya Akpuokwe Resume Updated01.pdf" class="resume-link" target="_blank"><button class="resume">Resume</button></a>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="./images/02_3_21_project1.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>The first project is related to develop a single Web page using
-                    only two technologies: HTML and CSS. The project consists in
-                    creating a single web page with a menu at the top know as
-                    Navigation Bar. We have to include text describing ourself and
-                    text describing the project. Additionally, we need to include
-                    two images: one image is of ourself and second image is anything
-                    related to the project itself.</p>
+      </div>
+      <div class="image">
+        <img src="IMG_1918.jpeg" alt="profile" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section__container">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__content">
+        <div class="about__text">
+          <p>
+            I am a sophomore at Iowa State University pursuing a Bachelor of Science in Software Engineering with a Minor in Cyber Security. I'm result-oriented with creative capabilities and great enthusiasm for software development and cyber security-based content.
+          </p>
+          <p>
+            As a dedicated student ranking in the top 2% academically, I've earned recognition on the Dean's List and President's List. I'm an active member of the Alpha Lambda Delta Honor Society and continuously seek opportunities to expand my technical skills and professional experience.
+          </p>
+          <p>
+            Beyond coding, I'm passionate about collaboration and cultural engagement through my involvement with organizations like the National Society of Black Engineers, Women in Science and Engineering, and the African Student Association.
+          </p>
+        </div>
+        <div class="about__details">
+          <div class="detail__item">
+            <h3>Education</h3>
+            <p><strong>Iowa State University</strong> (GPA: 4.00)</p>
+            <p>Bachelor of Science, Software Engineering</p>
+            <p>Minor: Cyber Security</p>
+            <p>Anticipated: May 2027</p>
+          </div>
+          <div class="detail__item">
+            <h3>Languages</h3>
+            <p>English (Native)</p>
+            <p>French (B2 Certification)</p>
+            <p>Japanese (Beginner)</p>
+            <p>Russian (Beginner)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="section__container">
+      <h2 class="section__title">Skills & Experience</h2>
+      
+      <div class="skills__container">
+        <div class="skills__category">
+          <h3>Programming Languages</h3>
+          <div class="skills__grid">
+            <div class="skill__item">
+              <div class="skill__name">C</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 85%"></div>
+              </div>
             </div>
-            Add more project divs here
+            <div class="skill__item">
+              <div class="skill__name">Java</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">HTML/CSS</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">JavaScript</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">Python</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at fuchicay@iastate.edu</p>
+        
+        <div class="skills__category">
+          <h3>Tools & Software</h3>
+          <div class="skills__grid">
+            <div class="skill__item">
+              <div class="skill__name">Git/GitHub</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">VS Code</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">Linux OS</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill__item">
+              <div class="skill__name">Verilog HDL</div>
+              <div class="skill__bar">
+                <div class="skill__level" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Fuchinanya Akpuokwe</p>
-    </footer>
+      </div>
+      
+      <div class="experience__timeline">
+        <h3>Experience</h3>
+        <div class="timeline__item">
+          <div class="timeline__date">Sept 2024 - Present</div>
+          <div class="timeline__content">
+            <h4>Engineering Career Fair Ambassador</h4>
+            <p>Volunteer | Iowa State University</p>
+            <ul>
+              <li>Support and ensure the success of the Career Fair in Ames, IA</li>
+              <li>Collaborate with career services to create a welcoming experience for employers</li>
+              <li>Assist in event setup and planning</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline__item">
+          <div class="timeline__date">Aug 2023 - Present</div>
+          <div class="timeline__content">
+            <h4>Shadow Initiative</h4>
+            <p>National Society of Black Engineers</p>
+            <ul>
+              <li>Work under current Executives and assist with designated tasks</li>
+              <li>Participated in organizational planning and execution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="project" id="project">
+    <div class="section__container">
+      <h2 class="section__title">Projects</h2>
+      <div class="box-container">
+        <div class="project-box">
+          <img src="1.png" alt="Portfolio Website">
+          <h3>Portfolio Website</h3>
+          <p>Personal responsive website showcasing my skills and projects using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <img src="2.png" alt="Hangman Game">
+          <h3>Hangman Game</h3>
+          <p>Modified version of the classic hangman game created as a team project using JavaScript.</p>
+          <a href="https://fuchi-a-c.github.io/Hangman-Game/" class="btn">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <img src="3.png" alt="Cyber Security Project">
+          <h3>Cyber Security Lab</h3>
+          <p>Academic project exploring security vulnerabilities and implementing protection strategies.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <img src="2.png" alt="Java Application">
+          <h3>Java Application</h3>
+          <p>Object-oriented programming project demonstrating software design principles.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-box">
+          <img src="1.png" alt="UI/UX Design">
+          <h3>UI/UX Design</h3>
+          <p>User interface mockups and prototypes designed for optimal user experience.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-gitlab'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div>
+      <p class="copyright">
+        &copy; 2024 Fuchinanya Akpuokwe
+      </p>
+    </footer>
+  </section>
 </body>
 
 </html>
